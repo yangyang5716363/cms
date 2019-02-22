@@ -1,0 +1,123 @@
+.content{
+  width: 84%;
+  min-height: calc(100% - 506px);
+  margin: 15px auto 20px;
+  padding: 31px 0 0;
+  font-size: 14px;
+  color: #777;
+  .item{
+    background: white;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 32%;
+    height: 200px;
+    margin-right: 2%;
+    background: white;
+    padding: 20px;
+    .titlebox{
+      height: 48px;
+      line-height: 48px;
+      .title{
+        color: #444444;
+        font-size: 24px;
+        vertical-align: top;
+      }
+      img{
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+    .item-content{
+      font-size: 16px;
+      color: #777777;
+      .link{
+        display: block;
+        color: #0099E8;
+        overflow : hidden;
+        text-overflow: ellipsis;
+      }
+      .item-content-word{
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        height: 62px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        position: relative;
+      }
+    }
+  }
+  .item:nth-child(3n){
+    margin-right: 0;
+  }
+}
+#noData{
+  width: 100%;
+  padding-top: 50px;
+  height: 200px;
+  text-align: center;
+}
+.cmsPage{
+  margin-bottom: 20px;
+  text-align: center;
+  li,ul{
+    display: inline-block;
+  }
+  li{
+    color: #444444;
+    background: white;
+    margin-right: 5px;
+    a{
+      border: 1px solid rgba(221,221,221,1);
+      border-radius: 3px;
+      font-size: 12px;
+      display: block;
+      min-width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  li:last-child{margin-right: 0}
+  .pageDisabled{
+    a{
+      color:#BDBDBD;
+      cursor: auto;
+    }
+  }
+  li a:hover,li.active a{
+    color: white;
+    background: #0099E8;
+    border-color: #0099E8;
+  }
+  li.pageDisabled a:hover{
+    color: #BDBDBD;
+    background: white;
+    border-color: rgba(221,221,221,1);
+  }
+  li.ellipsis a:hover{
+    color: #444;
+    border-color: rgba(221,221,221,1);
+    background: white;
+  }
+}
+@media (max-width: 920px){
+  .content{
+    .item{
+      width: 49%;
+      margin-right: 2%;
+    }
+    .item:nth-child(3n){
+      margin-right: 2%;
+    }
+    .item:nth-child(2n){
+      margin-right: 0;
+    }
+  } 
+}
+@media (max-width: 640px){
+  .content{
+    width: 93%;
+  } 
+}

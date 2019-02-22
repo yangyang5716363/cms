@@ -1,0 +1,139 @@
+.content{
+  position: relative;
+  width: 84%;
+  background: white;
+  min-height: calc(100% - 506px);
+  padding-bottom: 24px;
+  margin: 15px auto 20px;
+  font-size: 14px;
+  color: #777;
+  .content-search_keywords{
+    color: #444;
+    font-size: 18px;
+    padding: 24px;
+    border-bottom: 1px solid rgba(221,221,221,1);
+  }
+  .content-search_list{
+    padding: 0 24px;
+    li{
+      border-bottom: 1px solid rgba(221,221,221,1);
+      .content-search_title{
+        padding: 24px 0;
+        font-size: 18px;
+        color: #777;
+      }
+      .content-search_detail{
+        max-height: 88px;
+        margin-bottom: 24px;
+        color: #777;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+
+      }
+    }
+  }
+  .keywords{
+    color: #0099E8;
+  }
+}
+#noData{
+  width: 100%;
+  padding-top: 50px;
+  height: 200px;
+  text-align: center;
+  display: none;
+}
+.cmsPage{
+  padding-top: 15px;
+  text-align: center;
+  li,ul{
+    display: inline-block;
+  }
+  li{
+    color: #444444;
+    background: white;
+    margin-right: 5px;
+    a{
+      border: 1px solid rgba(221,221,221,1);
+      border-radius: 3px;
+      font-size: 12px;
+      display: block;
+      min-width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  li:last-child{margin-right: 0}
+  .pageDisabled{
+    a{
+      color:#BDBDBD;
+      cursor: auto;
+    }
+  }
+  li a:hover,li.active a{
+    color: white;
+    background: #0099E8;
+    border-color: #0099E8;
+  }
+  li.pageDisabled a:hover{
+    color: #BDBDBD;
+    background: white;
+    border-color: rgba(221,221,221,1);
+  }
+  li.ellipsis a:hover{
+    color: #444;
+    border-color: rgba(221,221,221,1);
+    background: white;
+  }
+}
+.paginationjs {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.paginationjs .paginationjs-pages li > a {
+  color: #444;
+  font-size: 12px;
+}
+.paginationjs .paginationjs-pages li.active > a {
+  height: 30px;
+  line-height: 30px;
+  background: #0099E8;
+  border-color: #0099E8;
+  color: #fff;
+}
+.paginationjs .paginationjs-pages li > a:hover {
+  background: #0099E8;
+  border-color: #0099E8;
+  color: #fff;
+}
+.paginationjs .paginationjs-pages li.disabled > a:hover {
+  background: none;
+  color: #444;
+}
+.paginationjs .paginationjs-pages li{
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.paginationjs .paginationjs-pages li:last-child, .paginationjs .paginationjs-pages li:last-child {
+  border-right: 1px solid #ddd;
+  border-radius: 3px;
+}
+.paginationjs .paginationjs-pages li:last-child{
+  margin-right: 0;
+}
+.paginationjs:after,.paginationjs .paginationjs-pages ul:after{
+  clear: both;
+  display: block;
+  content: '';
+  overflow: hidden;
+  height: 0;
+}
+@media (max-width: 640px){
+  .content{
+    width: 93%;
+  } 
+}

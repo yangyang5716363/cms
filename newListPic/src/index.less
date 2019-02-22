@@ -1,0 +1,214 @@
+.content{
+  position: relative;
+  width: 84%;
+  min-height: calc(100% - 506px);
+  margin: 15px auto 20px;
+  padding: 31px 33px;
+  font-size: 14px;
+  color: #777;
+  .content-html{
+    padding-bottom: 24px;
+  }
+  .flex{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    justify-content: -webkit-space-around;
+  }
+  .flex-item-left{
+    width: calc(100% - 315px);
+    background: white;
+    padding-bottom: 20px;
+  }
+  .newListBox{
+    padding: 24px 24px 4px;
+    li{
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(238,238,238,1);
+      margin-bottom: 20px;
+      color: #aaa;
+      .newList-left{
+        width: 272px;
+        height: 163px;
+        line-height: 163px;
+        overflow: hidden;
+        text-align: center;
+        .newList-left_cover{
+          max-width: 100%;
+        }
+      }
+      .countClicks{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        max-height: 44px;
+        line-height: 22px;
+      }
+      .newList-right{
+        max-height: 158px;
+        width: calc(100% - 280px);
+      }
+      .title{
+        max-height: 44px;
+        line-height: 22px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .newDetail{
+        max-height: 80px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+      a{
+        width: 100%;
+        color: #444;
+      }
+      a:hover{
+        color: #0099E8;
+      }
+      p{
+        margin-top: 10px;
+      }
+      .iconbox{
+        width: 100%;
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        height: 22px;
+      }
+      .icon-time,.icon-eye{
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+    .noCover .newList-right{
+      width: 100%;
+    }
+  }
+  .newSearchBox{
+    width: 300px;
+    .newSearchBox-inputBox{
+      background: white;
+      padding: 23px;
+      font-size: 18px;
+      color: #444444;
+      width: 100%;
+      position: relative;
+      #icon-search{
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        display: block;
+        right: 30px;
+        top: 65px;
+        color: #ccc;
+      }
+      #newSearchBox-input{
+        height: 34px;
+        padding-left: 10px;
+        margin: 8px 0 0;
+        outline: none;
+        border:1px solid rgba(221,221,221,1);
+        display: block;
+        width: 100%;
+      }
+    }
+    .searchList{
+      padding-left: 25px;
+      padding-bottom: 23px;
+      background: white;
+      .searchList-title{
+        padding-bottom: 15px;
+        margin-bottom: 23px;
+        color: #444444;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(221,221,221,1);
+      }
+      li{
+        margin-bottom: 23px;
+        color: #777;
+      }
+      li:hover a{
+        color: #0099E8;
+      }
+    }
+  }
+}
+#noData{
+  width: 100%;
+  padding-top: 50px;
+  height: 200px;
+  text-align: center;
+}
+.cmsPage{
+  background: white;
+  text-align: center;
+  li,ul{
+    display: inline-block;
+  }
+  li{
+    color: #444444;
+    background: white;
+    margin-right: 5px;
+    a{
+      border: 1px solid rgba(221,221,221,1);
+      border-radius: 3px;
+      font-size: 12px;
+      display: block;
+      min-width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  li:last-child{margin-right: 0}
+  .pageDisabled{
+    a{
+      color:#BDBDBD;
+      cursor: auto;
+    }
+  }
+  li a:hover,li.active a{
+    color: white;
+    background: #0099E8;
+    border-color: #0099E8;
+  }
+  li.pageDisabled a:hover{
+    color: #BDBDBD;
+    background: white;
+    border-color: rgba(221,221,221,1);
+  }
+  li.ellipsis a:hover{
+    color: #444;
+    border-color: rgba(221,221,221,1);
+    background: white;
+  }
+}
+@media (max-width: 920px){
+  .content .newListBox li{
+    .newList-left,.newList-right{
+      width: 100%;
+      float: none;
+      .newList-left_cover{
+        margin-bottom: 10px;
+      }
+    }
+    .frt.newList-right,.newList-left img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 640px){
+  .content{
+    width: 93%;
+  } 
+}
